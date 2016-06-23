@@ -6,5 +6,3 @@ function reverseString(str) {
   str = str.join('');
   return str;
 }
-
-reverseString("hello");
