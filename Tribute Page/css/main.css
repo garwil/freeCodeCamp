@@ -1,0 +1,27 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    font-family: Monospace;
+}
+h1 {
+    color: #E26351;
+}
+h3 {
+    color: #E26351;
+}
+p {
+    color: #333333;
+}
+a:hover {
+    color: #E26351;
+}
+a {
+    color: #E26351;
+}
+#block {
+    background-color: #262626;
+}
+#main-body {
+    background-color: #F2F1ED;
+}
