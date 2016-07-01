@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body font {
+  family: "Open Sans", sans-serif;
+  weight: normal;
+  size: 100%;
+  color: black;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 568px) {
+  .background {
+    display: none;
+  }
+}
+
+.quote-text {
+  position: relative;
+  text-align: left;
+  font-size: 4em;
+  font-family: "Amatic SC", cursive;
+  font-weight: normal;
+}
+
+.quote-author {
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-color: black;
+  font-size: 1.75em;
+  font-style: italic;
+}
+
+.quote-card {
+  position: static;
+  border-radius: 20px;
+  margin: 20% 10px auto;
+  padding: 30px;
+  background-color: #c8a681;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.interface {
+  display: flex;
+  justify-content: center;
+}
+
+.twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+  border-radius: 0;
+  color: white;
+  margin-right: 10px;
+  box-shadow: 1px 2px 5px #000000;
+}
+
+.refresh {
+  background-color: #9d856b;
+  border-color: #9d856b;
+  border-radius: 0;
+  color: black;
+  margin-right: 10px;
+  box-shadow: 1px 2px 5px #000000;
+}
