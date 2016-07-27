@@ -1,4 +1,4 @@
-// A function to decode text encrypted with Caesar's Cipher. This is probably the least efficient way to do this but I can't be bothered to rewrite it!
+// A function to decode text encrypted with Caesar's Cipher. This is probably the least efficient way to do this but at least it works!
 
 function rot13(str) {
     var decodedString = "";
@@ -90,4 +90,23 @@ function rot13(str) {
         }
     }
     return decodedString;
+}
+
+/* Here is a much more efficient way of doing it. I found this online after finishing this part of the course.
+I was on the right lines before started again with the solution above but IIRC I was using the wrong char codes!
+*/
+
+function rot13(str) {
+    var newString = [];
+
+    for (var i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) < 65 || str.charCodeAt(i) > 90) {
+            newString.push(str.charAt(i));
+        } else if (str.charCodeAt(i) > 77) {
+            newString.push(String.fromCharCode(str.charCodeAt(i) - 13));
+        } else {
+            newString.push(String.fromCharCode(str.charCodeAt(i) + 13));
+        }
+    }
+    return newString.join("");
 }

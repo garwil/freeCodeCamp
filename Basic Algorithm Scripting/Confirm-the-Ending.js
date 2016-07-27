@@ -4,3 +4,9 @@
 function confirmEnding(str, target) {
     return str.endsWith(target);
 }
+
+// Here is the "correct" way of doing it.
+
+function confirmEnding(str, target) {
+    return target.length > 0 && target === str.substr(str.length - target.length);
+}
